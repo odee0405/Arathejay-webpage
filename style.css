@@ -1,0 +1,47 @@
+body {
+    background-color:darkgrey;
+    
+        /* Set the background image URL */
+        background-image: url("images /IMG_9333.jpg");
+      
+        /* Set the background image to cover the entire body */
+        background-size: cover;
+      
+        /* Center the background image vertically and horizontally */
+        background-position: center center;
+      
+        /* Fix the background image so it doesn't scroll with the content */
+        background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    position: center;
+    font-size: 150px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lilita One', cursive;
+}
+
+
+.dsp {
+    width: 250px;
+    height: 250px;
+}
+
+.dsp-imgs{
+    position: relative;
+    top: 420px;
+    left:80px;
+}
+
+
+.artist {
+    width: 400px;
+    height: 400px;
+}
