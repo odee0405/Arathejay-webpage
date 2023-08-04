@@ -1,17 +1,36 @@
 body {
-    background-color:darkgrey;
+    padding: 0;
+    margin: 0;
+}
+
+.dark {
+
+    /* Set the background image URL */
+    background-image: URL("./images/IMG_9333.jpg");
+
+    /* Set the background image to cover the entire body */
+    background-size: cover;
     
-        /* Set the background image URL */
-        background-image: URL("./images/IMG_9333.jpg");
-      
-        /* Set the background image to cover the entire body */
-        background-size: cover;
-      
-        /* Center the background image vertically and horizontally */
-        background-position: center center;
-      
-        /* Fix the background image so it doesn't scroll with the content */
-        background-attachment: fixed;
+    /* Center the background image vertically and horizontally */
+    background-position: center center;
+    
+    /* Fix the background image so it doesn't scroll with the content */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+   
+    
+}
+
+.dark::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .section {
@@ -19,13 +38,15 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column;
+    z-index: 50;
 }
 
 .heading{
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 50
 }
 
 h1 {
@@ -42,14 +63,28 @@ h1 {
 .dsp {
     width: 250px;
     height: 250px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
 }
 
 .dsp-imgs{
-    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 50
+}
+
+@media screen and (max-width: 599px) {
+    .dsp{
+        width: 150px;
+        height: 150px;
+    }
+    h1{
+        font-size: 80px;
+    }
 }
 
 
-.artist {
-    width: 400px;
-    height: 400px;
-}
+
+
